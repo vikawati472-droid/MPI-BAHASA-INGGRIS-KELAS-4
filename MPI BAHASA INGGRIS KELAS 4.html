@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Media Pembelajaran Interaktif Bahasa Inggris Kelas IV SD: What Are You Doing?">
+<title>MPI Bahasa Inggris Kelas IV | What Are You Doing?</title>
+<style>
+:root{--blue:#2459d3;--navy:#17336f;--sky:#eaf4ff;--yellow:#ffcf56;--green:#198754;--red:#c0392b;--ink:#202b45;--muted:#64718a;--white:#fff}
+*{box-sizing:border-box}body{margin:0;background:linear-gradient(140deg,#e9f4ff,#fff7df);font-family:Arial,Helvetica,sans-serif;color:var(--ink);line-height:1.55}
+header{padding:24px 16px;text-align:center;background:var(--blue);color:white}header h1{font-size:clamp(1.6rem,4vw,2.6rem);margin:0}header p{margin:6px 0 0}
+main{max-width:1050px;margin:20px auto;padding:0 14px 30px}.nav{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin-bottom:16px}
+button{font:inherit;font-weight:700;border:0;border-radius:13px;padding:11px 15px;background:var(--yellow);color:#25304a;cursor:pointer;box-shadow:0 3px 0 #d9aa35;transition:transform .15s}
+button:hover{transform:translateY(-1px)}button:focus-visible{outline:3px solid #111;outline-offset:3px}
+.nav button{background:#fff;box-shadow:0 2px 0 #c8d8ee}.nav button.active{background:var(--blue);color:white}
+.panel{display:none;background:white;border-radius:22px;padding:clamp(16px,3vw,30px);box-shadow:0 8px 25px #23426c17}.panel.active{display:block}
+h2{color:var(--navy);margin-top:0}.hero{display:grid;grid-template-columns:1.25fr .75fr;gap:18px;align-items:center}
+.art{border-radius:20px;background:var(--sky);padding:25px;text-align:center;font-size:clamp(3.5rem,8vw,6rem)}
+.tag{display:inline-block;border-radius:20px;padding:5px 11px;background:#ffe8ee;font-size:.9rem}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px;margin:16px 0}
+.card{border:2px solid #dce8f8;background:#fbfdff;border-radius:16px;padding:15px;text-align:center}
+.emoji{font-size:2.8rem}.en{font-weight:bold;font-size:1.18rem;color:var(--blue);margin:5px 0}.id{color:var(--muted);margin-bottom:9px}
+.question{border:2px solid #dce8f8;border-radius:16px;padding:16px;margin:12px 0}.options{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}.options button{background:#edf4ff;box-shadow:none;border:1px solid #c4d8f5}
+.feedback{font-weight:bold;min-height:24px;margin-top:10px}.good{color:var(--green)}.bad{color:var(--red)}
+.progress{height:10px;border-radius:20px;background:#e6edf7;overflow:hidden;margin:10px 0 18px}.bar{height:100%;width:0;background:#24a568;transition:width .2s}
+label{display:block;margin:8px 0;cursor:pointer}footer{text-align:center;padding:18px;color:var(--muted);font-size:.9rem}
+.small{font-size:.93rem;color:var(--muted)}.score{font-size:1.35rem;font-weight:bold}.rowbtn{display:flex;gap:8px;flex-wrap:wrap;margin-top:16px}
+@media(max-width:650px){.hero{grid-template-columns:1fr}.nav button{flex:1 1 30%}}
+</style>
+</head>
+<body>
+<header>
+<h1>🌟 WHAT ARE YOU DOING? 🌟</h1>
+<p>Media Pembelajaran Interaktif Bahasa Inggris • Kelas IV</p>
+<p><strong>SD Negeri 6 Pakue Utara</strong></p>
+</header>
+<main>
+<nav class="nav" aria-label="Menu utama">
+<button class="active" data-screen="home">🏠 Beranda</button>
+<button data-screen="objectives">🎯 Tujuan</button>
+<button data-screen="material">📚 Materi</button>
+<button data-screen="story">🖼️ Cerita</button>
+<button data-screen="practice">✏️ Latihan</button>
+<button data-screen="quiz">🏆 Kuis</button>
+</nav>
+<section id="home" class="panel active">
+<div class="hero">
+<div><span class="tag">Let's learn English!</span><h2>Hello, students! 👋</h2>
+<p>Selamat datang di MPI Bahasa Inggris. Mari belajar menyebutkan kegiatan yang sedang dilakukan dengan cara yang menyenangkan.</p>
+<p><strong>Pertanyaan hari ini:</strong> <em>What are you doing?</em><br>Artinya: Apa yang sedang kamu lakukan?</p>
+<button onclick="go('objectives')">Mulai Belajar ➜</button></div>
+<div class="art" aria-label="Ilustrasi anak belajar">🧒🏻 📖 ✏️</div>
+</div>
+</section>
+<section id="objectives" class="panel">
+<h2>🎯 Learning Objectives</h2><p>Setelah belajar, kamu diharapkan mampu:</p>
+<div class="cards">
+<div class="card"><div class="emoji">👂</div><h3>Understand</h3><p>Memahami pertanyaan “What are you doing?”</p></div>
+<div class="card"><div class="emoji">🧠</div><h3>Recognize</h3><p>Mengenali kosakata kegiatan sehari-hari.</p></div>
+<div class="card"><div class="emoji">💬</div><h3>Answer</h3><p>Menjawab menggunakan “I am …-ing.”</p></div>
+</div><button onclick="go('material')">Lanjut ke Materi ➜</button>
+</section>
+<section id="material" class="panel">
+<h2>📚 Let's Learn!</h2>
+<p><strong>Question:</strong> What are you doing? = Apa yang sedang kamu lakukan?</p>
+<p><strong>Answer pattern:</strong> I am + verb-ing.</p>
+<div class="cards">
+<div class="card"><div class="emoji">📖</div><div class="en">I am reading.</div><div class="id">Saya sedang membaca.</div><button onclick="say('I am reading')">🔊 Listen</button></div>
+<div class="card"><div class="emoji">✍️</div><div class="en">I am writing.</div><div class="id">Saya sedang menulis.</div><button onclick="say('I am writing')">🔊 Listen</button></div>
+<div class="card"><div class="emoji">🍎</div><div class="en">I am eating.</div><div class="id">Saya sedang makan.</div><button onclick="say('I am eating')">🔊 Listen</button></div>
+<div class="card"><div class="emoji">⚽</div><div class="en">I am playing.</div><div class="id">Saya sedang bermain.</div><button onclick="say('I am playing')">🔊 Listen</button></div>
+<div class="card"><div class="emoji">📚</div><div class="en">I am studying.</div><div class="id">Saya sedang belajar.</div><button onclick="say('I am studying')">🔊 Listen</button></div>
+<div class="card"><div class="emoji">🛏️</div><div class="en">I am sleeping.</div><div class="id">Saya sedang tidur.</div><button onclick="say('I am sleeping')">🔊 Listen</button></div>
+</div>
+<div class="question"><h3>Remember!</h3><p>Gunakan <strong>I am + kata kerja berakhiran -ing</strong> untuk menyatakan kegiatan yang sedang kamu lakukan.</p><p>Contoh: <em>I am reading a book.</em> = Saya sedang membaca buku.</p></div>
+<button onclick="go('story')">Lihat Cerita Bergambar ➜</button>
+</section>
+<section id="story" class="panel">
+<h2>🖼️ A Day at School</h2><p>Klik gambar untuk melihat kalimat yang sesuai.</p>
+<div class="cards">
+<div class="card"><button class="scene" data-sentence="Ani is reading." data-meaning="Ani sedang membaca." style="width:100%;background:#eaf4ff;box-shadow:none"><div class="emoji">👧📖</div><strong>Ani</strong></button><p class="sceneout small"></p></div>
+<div class="card"><button class="scene" data-sentence="Budi is writing." data-meaning="Budi sedang menulis." style="width:100%;background:#eaf4ff;box-shadow:none"><div class="emoji">👦✍️</div><strong>Budi</strong></button><p class="sceneout small"></p></div>
+<div class="card"><button class="scene" data-sentence="Siti is eating." data-meaning="Siti sedang makan." style="width:100%;background:#eaf4ff;box-shadow:none"><div class="emoji">👧🍎</div><strong>Siti</strong></button><p class="sceneout small"></p></div>
+<div class="card"><button class="scene" data-sentence="Andi is playing." data-meaning="Andi sedang bermain." style="width:100%;background:#eaf4ff;box-shadow:none"><div class="emoji">👦⚽</div><strong>Andi</strong></button><p class="sceneout small"></p></div>
+</div>
+<p class="small">Contoh tambahan: “What is Ani doing?” — “She is reading.”</p>
+<button onclick="go('practice')">Lanjut ke Latihan ➜</button>
+</section>
+<section id="practice" class="panel">
+<h2>✏️ Let's Practice!</h2><p>Pilih jawaban yang paling tepat.</p>
+<div class="question" data-answer="B"><h3>1. Gambar: anak sedang menulis ✍️</h3><p>What are you doing?</p><div class="options"><button onclick="practice(this,'A')">A. I am sleeping.</button><button onclick="practice(this,'B')">B. I am writing.</button><button onclick="practice(this,'C')">C. I am eating.</button></div><div class="feedback"></div></div>
+<div class="question" data-answer="A"><h3>2. “I am eating” artinya …</h3><div class="options"><button onclick="practice(this,'A')">A. Saya sedang makan.</button><button onclick="practice(this,'B')">B. Saya sedang membaca.</button><button onclick="practice(this,'C')">C. Saya sedang bermain.</button></div><div class="feedback"></div></div>
+<div class="question" data-answer="C"><h3>3. Lengkapi: I am ____ a book.</h3><div class="options"><button onclick="practice(this,'A')">A. eat</button><button onclick="practice(this,'B')">B. sleep</button><button onclick="practice(this,'C')">C. reading</button></div><div class="feedback"></div></div>
+<div class="rowbtn"><button onclick="go('quiz')">Mulai Kuis ➜</button></div>
+</section>
+<section id="quiz" class="panel">
+<h2>🏆 Quiz Time!</h2><p>Jawab lima pertanyaan berikut. Setiap jawaban benar bernilai 20 poin.</p>
+<div class="progress"><div class="bar" id="bar"></div></div>
+<form id="quizForm">
+<div class="question"><h3>1. “What are you doing?” berarti …</h3><label><input type="radio" name="q1" value="a"> Apa kabar?</label><label><input type="radio" name="q1" value="b"> Apa yang sedang kamu lakukan?</label><label><input type="radio" name="q1" value="c"> Siapa namamu?</label></div>
+<div class="question"><h3>2. Pilih kalimat “Saya sedang membaca.”</h3><label><input type="radio" name="q2" value="a"> I am reading.</label><label><input type="radio" name="q2" value="b"> I am eating.</label><label><input type="radio" name="q2" value="c"> I am sleeping.</label></div>
+<div class="question"><h3>3. Gambar ⚽ paling sesuai dengan …</h3><label><input type="radio" name="q3" value="a"> I am writing.</label><label><input type="radio" name="q3" value="b"> I am sleeping.</label><label><input type="radio" name="q3" value="c"> I am playing.</label></div>
+<div class="question"><h3>4. Lengkapi: I am ____.</h3><label><input type="radio" name="q4" value="a"> read</label><label><input type="radio" name="q4" value="b"> reading</label><label><input type="radio" name="q4" value="c"> reads</label></div>
+<div class="question"><h3>5. “I am writing” artinya …</h3><label><input type="radio" name="q5" value="a"> Saya sedang menulis.</label><label><input type="radio" name="q5" value="b"> Saya sedang makan.</label><label><input type="radio" name="q5" value="c"> Saya sedang bermain.</label></div>
+<button type="submit">Periksa Jawaban</button>
+</form>
+<div id="result" class="question" hidden aria-live="polite"></div>
+<button onclick="resetQuiz()" style="margin-top:10px">Ulangi Kuis ↻</button>
+</section>
+<footer>MPI Bahasa Inggris Kelas IV • SD Negeri 6 Pakue Utara<br>Belajar dengan gembira, berlatih setiap hari! 🌟</footer>
+</main>
+<script>
+const navButtons=[...document.querySelectorAll('[data-screen]')];
+function go(id){document.querySelectorAll('.panel').forEach(p=>p.classList.toggle('active',p.id===id));navButtons.forEach(b=>b.classList.toggle('active',b.dataset.screen===id));window.scrollTo({top:0,behavior:'smooth'});window.currentScreen=id;}
+navButtons.forEach(b=>b.addEventListener('click',()=>go(b.dataset.screen)));
+window.currentScreen='home';window.practiceScore=0;window.quizCompleted=false;
+function say(text){if('speechSynthesis' in window){speechSynthesis.cancel();let u=new SpeechSynthesisUtterance(text);u.lang='en-US';u.rate=.82;speechSynthesis.speak(u)}else{alert('Audio pelafalan tidak didukung di perangkat ini.')}} 
+document.querySelectorAll('.scene').forEach(b=>b.addEventListener('click',()=>{const out=b.parentElement.querySelector('.sceneout');out.textContent=b.dataset.sentence+' — '+b.dataset.meaning;}));
+function practice(btn,choice){const q=btn.closest('.question'),f=q.querySelector('.feedback');if(q.dataset.done==='true')return;q.dataset.done='true';if(choice===q.dataset.answer){f.textContent='Correct! Great job! 🌟';f.className='feedback good';window.practiceScore++}else{f.textContent='Not quite. Keep learning! Jawaban yang benar ditandai setelah mencoba.';f.className='feedback bad';q.querySelectorAll('button').forEach(x=>{if(x.textContent.trim().startsWith(q.dataset.answer+'.'))x.style.border='2px solid #198754'})}}
+const form=document.getElementById('quizForm');form.addEventListener('change',()=>{let done=0;for(let i=1;i<=5;i++)if(form.querySelector('input[name=q'+i+']:checked'))done++;document.getElementById('bar').style.width=(done/5*100)+'%'});
+form.addEventListener('submit',e=>{e.preventDefault();const key={q1:'b',q2:'a',q3:'c',q4:'b',q5:'a'};let correct=0;for(let i=1;i<=5;i++){const a=form.querySelector('input[name=q'+i+']:checked');if(a&&a.value===key['q'+i])correct++}const score=correct*20;const result=document.getElementById('result');result.hidden=false;result.innerHTML='<div class="score">Nilai kamu: '+score+'/100 🌟</div><p>Jawaban benar: '+correct+' dari 5 soal.</p><p>'+(score>=80?'Excellent! Kamu hebat!':score>=60?'Good job! Terus berlatih!':'Keep learning! Pelajari materi lagi dan coba kembali.')+'</p>';window.quizCompleted=true;window.quizScore=score;result.scrollIntoView({behavior:'smooth',block:'center'})});
+function resetQuiz(){form.reset();document.getElementById('result').hidden=true;document.getElementById('bar').style.width='0';window.quizCompleted=false;window.quizScore=0}
+</script>
+</body></html>
